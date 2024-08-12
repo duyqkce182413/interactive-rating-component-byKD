@@ -1,0 +1,121 @@
+* {
+    font-family: 'Overpass';
+}
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --LighterDarkBlue: #262F38;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #141519;
+}
+
+/* rating card */
+.card {
+    width: 340px;
+    padding: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: #1C232D;
+}
+
+.star-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    color: var(--LightGrey);
+    background-color: var(--LighterDarkBlue);
+}
+h1 {
+    color: var(--White);
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: var(--LightGrey);
+}
+
+.number-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 50%;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    color: var(--LightGrey);
+    background-color: #262F38;
+}
+
+.number:hover {
+    color: var(--DarkBlue);
+    background-color: var(--Orange);
+}
+
+.number:focus {
+    color: var(--DarkBlue);
+    background-color: var(--White);
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 15px 0;
+    font-weight: 700;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    align-content: center;
+    text-transform: uppercase;
+    background-color: var(--Orange);
+}
+
+.submit-btn:hover {
+    background-color: var(--White);
+}
+
+/* thank card */
+.banner {
+    margin-top: 15px;
+}
+.thank-card {
+    text-align: center;
+}
+
+.selected {
+    background-color: var(--LighterDarkBlue);
+    display: inline-block;
+    color: var(--Orange);
+    padding: 5px 20px;
+    margin: 25px 0;
+    border-radius: 25px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.text p{
+    margin-top: 0;
+    margin-bottom: 7px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+  <div id="rating-state" style="display: block;">
+    <div class="card rating-card">
+      <div class="star-icon">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <div class="number-rating">
+        <button onclick="changeNumber('1')" class="number">1</button>
+        <button onclick="changeNumber('2')" class="number">2</button>
+        <button onclick="changeNumber('3')" class="number">3</button>
+        <button onclick="changeNumber('4')" class="number">4</button>
+        <button onclick="changeNumber('5')" class="number">5</button>
+      </div>
+      <button onclick="changeState()" class="submit-btn">Submit</button>
+    </div>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div id="thank-state" style="display: none;">
+    <div class="card thank-card">
+      <div class="banner">
+        <img src="./images/illustration-thank-you.svg" alt="">
+      </div>
+      <div class="selected">
+        You selected <span id="number-selected"></span> out of 5
+      </div>
+
+      <div class="text">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- Thank you state end -->
+
+
+  <div class="attribution" style="display: none;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
